@@ -1,8 +1,4 @@
 <?php
-session_start();
-if(empty($_SESSION['user'])){
-  header("Location: ../login/forma.php?Access=You have to login before entering this page");
-}
 include '../include/head.php';
 include '../include/navigation.php';
 //include 'page_akcije/deletePage.php';
@@ -13,13 +9,13 @@ include '../include/navigation.php';
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Pages</h1>
+            <h1 class="m-0 text-dark">Users</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
 
-    <a href="editPages.php?id=0" class="float-right btn btn-primary">Novi unos</a>
+<a href="editPages.php?id=0" class="float-right btn btn-primary">Novi unos</a>
 
     <div class="card-body">
                 <table class="table table-bordered">
@@ -57,8 +53,9 @@ include '../include/navigation.php';
     </tbody>
                 </table>
               </div>
-    
-<?php
+
+
+    <?php
 include '../include/scripts.php';
 
 ?>

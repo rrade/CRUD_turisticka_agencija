@@ -37,5 +37,8 @@
 <script src="<?= $base_dir ?>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= $base_dir ?>/dist/js/demo.js"></script>
+<!-- bs-custom-file-input -->
+<script src="<?= $base_dir ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script type="text/javascript">
 </body>
 </html>

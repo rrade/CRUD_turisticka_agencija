@@ -17,4 +17,17 @@ function getPageDetails($id) {
     return $query;
 }
 
+function getAllUsers($rola) {
+    global $connect;
+    if($rola == 1){
+    $query = $connect->prepare("SELECT * FROM user");
+    $query->execute();
+    return $query;
+    }
+    else {
+        
+    }
+
+}
+
 ?>

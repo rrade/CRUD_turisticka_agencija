@@ -8,6 +8,18 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
+
+      <li class="nav-item">
+        <form action="" method="POST">
+        <button type="submit" name="logout" value="logout" class="btn btn-warning">Log out</button>
+        </form>
+        <?php
+        if(isset($_POST['logout']) && !empty($_POST['logout'])){
+          session_destroy();
+          header("Location: /turisticka_agencija/Admin/login/forma.php");
+        }
+        ?>
+      </li>
      
     </ul>
 
@@ -34,6 +46,17 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Pages
+                
+              </p>
+            </a>
+            
+          </li>
+
+          <li class="nav-item has-treeview menu-open">
+            <a href="/turisticka_agencija/Admin/users/list_users.php" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                User
                 
               </p>
             </a>
