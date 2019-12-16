@@ -1,8 +1,8 @@
 <?php
-$root = $_SERVER['DOCUMENT_ROOT']."/turisticka_agencija";
+$root = $_SERVER['DOCUMENT_ROOT']."/bildstudio_test";
 include "$root/include/connect.php";
-include "$root/Admin/funkcije/funkcije.php";
-$base_dir = "/turisticka_agencija";
+include "$root/funkcije/funkcije.php";
+$base_dir = "/bildstudio_test";
 ?>
 <!DOCTYPE html>
 <html>

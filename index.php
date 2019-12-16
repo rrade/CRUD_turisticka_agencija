@@ -1,8 +1,4 @@
 <?php
-session_start();
-if(empty($_SESSION['user'])){
-  header("Location: login/forma.php?Access=You have to login before entering this page");
-}
 include 'include/head.php';
 include 'include/navigation.php';
 ?>

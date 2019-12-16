@@ -7,6 +7,7 @@
 <script src="<?= $base_dir ?>/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?= $base_dir ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
@@ -39,6 +40,17 @@
 <script src="<?= $base_dir ?>/dist/js/demo.js"></script>
 <!-- bs-custom-file-input -->
 <script src="<?= $base_dir ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+
 <script type="text/javascript">
+$(document).ready(function(){
+    brojac = 1;
+    $("#addNew").click(function(){
+        $('#novaOsobina').append('<div class="form-group"><label for="inputName">Osobina'+brojac+'</label><input type="text" id="'+brojac+'" class="form-control" name="title" value=""></div> <input type="hidden" id="Osobina'+brojac+'" value="'+brojac+'">'); 
+      brojac++;
+    });
+
+});
+</script>
 </body>
 </html>
